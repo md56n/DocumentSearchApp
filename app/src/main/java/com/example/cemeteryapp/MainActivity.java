@@ -1,13 +1,11 @@
-package com.example.geneapplication;
+package com.example.cemeteryapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,13 +17,25 @@ public class MainActivity extends AppCompatActivity {
         searchPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSearchActivity();                                         //Change layout to search page after clicking button
+                openSearchActivity();                                       //Change layout to search page after clicking button
+            }
+        });
+        Button browsePage = (Button) findViewById(R.id.browseButton);       //Get id for button
+        browsePage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBrowseActivity();                                       //Change layout to browse page after clicking button
             }
         });
     }
 
     public void openSearchActivity() {
         Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void openBrowseActivity() {
+        Intent intent = new Intent(this, BrowseActivity.class);
         startActivity(intent);
     }
 }

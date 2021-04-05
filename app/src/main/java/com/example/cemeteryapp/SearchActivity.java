@@ -1,9 +1,9 @@
-package com.example.geneapplication;
+package com.example.cemeteryapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
@@ -24,7 +24,7 @@ public class SearchActivity extends AppCompatActivity {
         submitSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                                     //Change layout to main page after clicking button
+                //Change layout to main page after clicking button
             }
         });
     }

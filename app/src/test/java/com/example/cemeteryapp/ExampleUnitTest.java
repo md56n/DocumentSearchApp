@@ -1,4 +1,4 @@
-package com.example.geneapplication;
+package com.example.cemeteryapp;
 
 import org.junit.Test;
 
